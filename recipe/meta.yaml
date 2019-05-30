@@ -1,5 +1,5 @@
 {% set name = "spython" %}
-{% set version = "0.0.62" %}
+{% set version = "0.0.63" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca6c94ec16decaa65f8fc7113f06317d47a6743501d4f5680bf7832c4549c8fd
+  sha256: de42d2642fd4762cfe375fd030d03604d830e945ee510b3140ae0c1393fbb18a
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   run:
     - python >=3
     - requests
+    - semver
 
 test:
   imports:

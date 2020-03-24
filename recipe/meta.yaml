@@ -1,20 +1,20 @@
 {% set name = "spython" %}
-{% set version = "0.0.76" %}
+{% set version = "0.0.77" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d132e36eef8d811bfe7055a94940e23e3242f2ef7260565e74ef139ddf1438ff
+  sha256: 12b9b1d050437872ad764f235c05c033784c38578829c85af74243ac9517f75b
 
 build:
   number: 0
   noarch: python
   entry_points:
     - spython=spython.client:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:

@@ -5,7 +5,7 @@ Home: http://www.github.com/singularityhub/singularity-cli
 
 Package license: MPL-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Command line python tool for working with singularity.
 

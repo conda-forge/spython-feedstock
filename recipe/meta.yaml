@@ -1,13 +1,13 @@
 {% set name = "spython" %}
-{% set version = "0.0.84" %}
+{% set version = "0.0.85" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 592e7a3ce6be929f604d5a36be85399f14571e752acadb7a778531d2a8471ab9
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
+  sha256: f86bb976d29b506a04b498e005439749a140d334f77030cabd468c30788828e0
 
 build:
   number: 0
@@ -23,7 +23,6 @@ requirements:
     - pytest-runner
   run:
     - python >=3
-    - requests
     - semver
 
 test:

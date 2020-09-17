@@ -23,7 +23,6 @@ requirements:
     - pytest-runner
   run:
     - python >=3
-    - requests
     - semver
 
 test:

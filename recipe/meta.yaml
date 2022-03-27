@@ -30,7 +30,6 @@ test:
     - spython
     - spython.client
     - spython.image
-    - spython.image.cmd
     - spython.instance
     - spython.instance.cmd
     - spython.logger
@@ -51,7 +50,7 @@ about:
   license_file: LICENSE
   summary: Command line python tool for working with singularity.
   doc_url: https://singularityhub.github.io/singularity-cli/install
-  dev_url: https://www.github.com/singularityhub/singularity-cli
+  dev_url: https://github.com/singularityhub/singularity-cli
 
 extra:
   recipe-maintainers:

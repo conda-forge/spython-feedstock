@@ -1,5 +1,5 @@
 {% set name = "spython" %}
-{% set version = "0.1.18" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
-  sha256: 1a58735f1d119976ffef63619d0e0b626d43151f84a5d63cb3d67a34b14991a1
+  sha256: 22667b3a28cfd3f7b58475222b89af0f5456455ff2cd62153f11f93d506370f2
 
 build:
   number: 0
@@ -30,7 +30,6 @@ test:
     - spython
     - spython.client
     - spython.image
-    - spython.image.cmd
     - spython.instance
     - spython.instance.cmd
     - spython.logger
@@ -51,7 +50,7 @@ about:
   license_file: LICENSE
   summary: Command line python tool for working with singularity.
   doc_url: https://singularityhub.github.io/singularity-cli/install
-  dev_url: https://www.github.com/singularityhub/singularity-cli
+  dev_url: https://github.com/singularityhub/singularity-cli
 
 extra:
   recipe-maintainers:

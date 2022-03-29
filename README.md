@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spython-feedsto
 
 Summary: Command line python tool for working with singularity.
 
-Development: https://www.github.com/singularityhub/singularity-cli
+Development: https://github.com/singularityhub/singularity-cli
 
 Documentation: https://singularityhub.github.io/singularity-cli/install
 

@@ -1,11 +1,11 @@
-About spython
-=============
-
-Home: http://www.github.com/singularityhub/singularity-cli
-
-Package license: MPL-2.0
+About spython-feedstock
+=======================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spython-feedstock/blob/main/LICENSE.txt)
+
+Home: http://github.com/singularityhub/singularity-cli
+
+Package license: MPL-2.0
 
 Summary: Command line python tool for working with singularity.
 

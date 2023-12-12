@@ -1,5 +1,5 @@
 {% set name = "spython" %}
-{% set version = "0.3.11" %}
+{% set version = "0.3.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
-  sha256: df5c2f5d8c166b986b4a0aa79e08a593e38fbdd134079ab786194977f9ab686a
+  sha256: 931105675f7889705e50859df72f01b8e00b5ad92ab2e5d9ef47563343419e4e
 
 build:
   number: 0

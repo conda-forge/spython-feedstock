@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
   sha256: 8ad53ef034395cfa2d8a710cc1c3638e4475e5bbc6a2842d317db8013c2e4188
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - spython=spython.client:main
@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
     - pytest-runner
   run:
-    - python >=3
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -41,6 +41,7 @@ test:
     - spython --help
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: http://github.com/singularityhub/singularity-cli
